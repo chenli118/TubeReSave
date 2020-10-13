@@ -29,7 +29,7 @@ $ pipenv shell
 ```
 如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过pip安装（`pip install pipenv`）。
 
-### 运行示例程序
+### 运行示例程序 
 
 $ flask initdb --drop 
  
