@@ -42,7 +42,7 @@ $ flask initdb --drop
 $ flask run --host=0.0.0.0 --port=80 
 ```
 现在使用浏览器打开 http://ip
- 
+``` 
 
 ## License
 
