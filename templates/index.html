@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Video List</h1>
+<a href="{{ url_for('new_note') }}">Add a Video Address </a>
+
+<h4>{{ tubes|length }} Videos:</h4>
+    {% for tube in tubes %}
+<div class="note">
+    <p>{{ tube.Title }}</p>
+    <video width="720" controls> <source src="{{ tube.Title }}" type="video/mp4"> </video>
+    <a class='btn' href="{{ url_for('edit_note', tube_id=tube.id) }}">Edit</a>
+    <form method="post" action="{{ url_for('delete_note', tube_id=tube.id) }}">
+        {{ form.csrf_token }}
+        {{ form.submit(class='btn') }}
+    </form>
+</div>
+    {% endfor %}
+{% endblock %}
+
