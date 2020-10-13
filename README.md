@@ -33,9 +33,17 @@ $ pipenv shell
 
 $ flask initdb --drop 
  
-$ flask run (静态ip+80端口方式：flask run --host=0.0.0.0 --port=80 )
+$ flask run  
 ```
 现在使用浏览器打开http://localhost:5000
+
+### 静态ip+80端口方式运行示例程序
+
+$ flask initdb --drop 
+ 
+$ flask run --host=0.0.0.0 --port=80 
+```
+现在使用浏览器打开 http://ip
  
 
 ## License
