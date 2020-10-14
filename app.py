@@ -34,7 +34,7 @@ db = SQLAlchemy(app)
 # handlers
 @app.shell_context_processor
 def make_shell_context():
-    return dict(db=db, Note=Tube)
+    return dict(db=db, Tube=Tube)
 
 
 @app.cli.command()
